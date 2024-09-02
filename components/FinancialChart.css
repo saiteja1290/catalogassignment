@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.financial-chart-container {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.price-summary h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.price-summary .price-change {
+  color: green;
+  font-size: 18px;
+}
+
+.chart-navigation ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+
+.chart-navigation ul li {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.chart-navigation ul li.active {
+  border-bottom: 2px solid #007bff;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+.chart-controls button {
+  margin-right: 10px;
+}
+
+.timeframe-selector {
+  margin-top: 20px;
+}
+
+.timeframe-selector button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+.timeframe-selector button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.chart-placeholder {
+  margin-top: 20px;
+  padding: 40px;
+  background: #f0f0f0;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+.chart-line {
+  height: 100px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.chart-line .high-price,
+.chart-line .current-price {
+  position: absolute;
+  right: 10px;
+  background: #007bff;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.chart-line .high-price {
+  top: 10px;
+}
+
+.chart-line .current-price {
+  bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .price-summary h1 {
+    font-size: 28px;
+  }
+
+  .chart-container {
+    margin-top: 15px;
+  }
+
+  .chart-placeholder {
+    padding: 30px;
+  }
+}
